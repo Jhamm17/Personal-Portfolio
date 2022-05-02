@@ -20,12 +20,14 @@
     <header>
         <nav class="navigation">
             <div class="nav-container">
-                <a class="nav-title" href=""><strong> Jackson Hamm </strong></a>
-
+                <a class="nav-title" href="index.html"><strong> Jackson Hamm </strong></a>
                 <ul>
                 <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
                 <li class="item"><a href="index.html">Home</a></li>
-                <li class="item"><a href="menu.html">Menu</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="photography.html">About</a></li>
+                <li class="item"><a href="resume.html">About</a></li>
+                <li class="item"><a href="contact.html">About</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,16 +38,41 @@
             <article class="landing">
                 <h1> Hi, I'm Jackson.</h1>
                 <h2> Front End Developer & Digital Content Creator </h2>
-                <p> Welcome to my Website! I am a Developer and student at Indiana University. I love sports, nature, and pizza. </p>
-                <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Contact Me</a>
+                <p> Welcome to my Website! I am a Developer and student at Indiana University. I love sports, nature, and everything digital. </p>
+                <a class="btn btn-outline-secondary btn-lg" href="contact.html" role="button">Contact Me</a>
             </article>
         </div>
     </main>
+    <section>
+        <div class="intro">
+            <h2> I have a passion for creating digital content. Whether that be coding, videos, or pictures, I love it all. </h2>
+            <img class="home-1" src="#" alt="pic-1">
+                <div class="pic-title-1">
+                    <p> Blank </p>
+                </div>
+            <img class="home-2" src="#" alt="pic-2">
+                <div class="pic-title-1">
+                    <p> Blank </p>
+                </div>
+            <img class="home-3" src="#" alt="pic-3">
+                <div class="pic-title-1">
+                    <p> Blank </p>
+                </div>
+        </div>
+    </section>
 
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
 </body>
 
 <footer>
     <div class="footer-container">
+        <h2> Social Media </h2>
         <ul>
             <li>
                 <p>Instagram</p>
@@ -65,5 +92,6 @@
         </ul>
 
     </div>
+</footer>
 
 </html>
