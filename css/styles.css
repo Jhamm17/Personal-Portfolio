@@ -66,8 +66,84 @@ html {
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 
+/* index page */
+
+body {
+  background: rgb(0, 0, 0);
+}
 
 
+/* Navigation */
+
+nav {
+  position: fixed;
+}
+nav ul {
+  position: fixed;
+  margin-right: 500px;
+  color: white;
+  text-align: right;
+  width: 100%;
+  /* optional - if you have trouble getting items to stay in their column */
+  /* display: flex;
+  flex-direction: column; */
+}
+nav li {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.toggle:hover {
+  color: fuchsia;
+}
+.item {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+.item a:hover {
+  color: fuchsia;
+}
+.item a {
+  color: black;
+  font-size: 36px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1.0rem 0.2rem 1.0rem;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* FOOTER */
+
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background: wheat;
+} 
+
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px
+}
 
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
