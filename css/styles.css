@@ -69,24 +69,34 @@ html {
 /* index page */
 
 body {
-  background: rgb(0, 0, 0);
+  background: rgb(27, 26, 26);
 }
 
+/* Photography Page */
+
+.photo-article {
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
 
 /* Navigation */
 
 nav {
   position: fixed;
 }
+
 nav ul {
   position: fixed;
-  margin-right: 500px;
   color: white;
   text-align: right;
+  margin-top: -32px;
+  margin-bottom: 200px;
   width: 100%;
-  /* optional - if you have trouble getting items to stay in their column */
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
 }
 nav li {
   list-style-type: none;
@@ -117,6 +127,21 @@ nav li {
   opacity: 1;
 }
 
+.nav-title {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+}
+
+
 /* FOOTER */
 
 
@@ -125,15 +150,23 @@ nav li {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  background: wheat;
+  background: rgb(37, 37, 36);
 } 
 
+.footer-photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+} 
 
 .footer-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #ffffff;
 }
 
 .social-footer {
@@ -146,12 +179,77 @@ nav li {
 }
 
 
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h5 {
+  margin-bottom: 30px;
+}
+
+/* About Page */
+
+
+.about-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  width: 100%;
+  background-color: rgba(16, 15, 75, 0.705);
+  text-align: center;
+  margin-top: -300px;
+}
+
+.about-nav {
+  padding-top: 10px;
+}
+
+.about-article h1 {
+  margin-bottom: 360px;
+  font-size: 70px;
+  font-weight: bold;
+  padding-bottom: 100px;
+  margin-top: -510px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+  color: #ffffff;
+  background-color: rgba(27, 26, 26, 0.705);
+  width: 80%;
+  height: 100%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
+  .about-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    width: 100%;
+    background-color: rgba(51, 47, 47, 0.705);
+    text-align: center;
+  } 
 
 }
 
@@ -162,6 +260,18 @@ No media query for `xs` since this is the default */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .about-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15%;
+    color: #ffffff;
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgba(51, 47, 47, 0.705);
+    text-align: center;
+  }
 
 }
 

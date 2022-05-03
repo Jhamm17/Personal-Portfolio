@@ -33,27 +33,38 @@
         </nav>
     </header>
 
-    <h1> Photography </h1>
+    <article class="photo-article">
 
-    <p> One of my hobbies is going out to create digital content with my camera. I love taking pictures of the scenery, my outfit, or just goofy pics. I also really enjoy making videos. I am always
-        looking to learn new skills, and video creation is something I'm really interested in getting better at. Check out some of my content below! </p>
-    
-    <!-- Made with the help of "https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html#"-->
+        <h1> Photography </h1>
+
+        <p> One of my hobbies is going out to create digital content with my camera. I love taking pictures of the scenery, my outfit, or just goofy pics. I also really enjoy making videos. I am always
+            looking to learn new skills, and video creation is something I'm really interested in getting better at. Check out some of my content below! </p>
         
-    <section class="choices">
-        <div class="polaroid">
-            <a href="#" title="Videos">
-                <img height="250" src="" alt="Videos" title="Videos" />
-            <a href="#" title="Portraits">
-                <img height="250" src="" alt="Portraits" title="Portraits" />
-            <a href="#" title="Scenery">
-                <img height="250" src="" alt="Scenery" title="Scenery" />
-        </div>
-    </section>
+        <!-- Made with the help of "https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html#"-->
+            
+        <section class="choices">
+            <div class="polaroid">
+                <a href="#" title="Videos">
+                    <img height="250" src="" alt="Videos" title="Videos" />
+                <a href="#" title="Portraits">
+                    <img height="250" src="images/Glow.jpg" alt="Portraits" title="Portraits" />
+                <a href="#" title="Scenery">
+                    <img height="250" src="images/Neon.jpg" alt="Scenery" title="Scenery" />
+            </div>
+        </section>
+
+    </article>
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
 </body>
 
 <footer>
-    <div class="footer-container">
+    <div class="footer-photo">
         <h2> Social Media </h2>
         <ul>
             <li>
