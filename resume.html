@@ -18,54 +18,72 @@
 
 <body>
     <header>
-        <nav class="navigation">
-            <div class="nav-container">
-                <a class="nav-title" href="index.html"><strong> Jackson Hamm </strong></a>
-                <ul>
-                <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
-                <li class="item"><a href="index.html">Home</a></li>
-                <li class="item"><a href="about.html">About</a></li>
-                <li class="item"><a href="photography.html">Photos</a></li>
-                <li class="item"><a href="resume.html">Resume</a></li>
-                <li class="item"><a href="contact.html">Contact</a></li>
-                </ul>
+        <nav>
+            <div class="logo">Jackson Hamm</div>
+          
+            <div class="navbar">
+              <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="photography.html" class="nav-link">Photos</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              </ul>
             </div>
-        </nav>
+          
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
     </header>
-
-    <article class="resume">
-        <img src="images/Resume.JPG" alt="Resume">
-    </article>
     
     <!-- Script for Navigation - hides and reveals menu items on click -->
     <script>
-        function toggleDropdown() {
-            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
-        }
-        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) =>
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            })
+        );
     </script>
 </body>
 
+<article class="resume">
+    <img src="images/Resume.JPG" alt="Resume">
+</article>
+
 <footer>
     <div class="footer-container">
-        <h2> Social Media </h2>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/jackson.hamm.5/"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/jacksonhamm/"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/jackson-hamm-3a1319182/"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-                <a href="https://https://www.github.com/Jhamm17/"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com/Jphamm2001/"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-        </ul>
+        <span style = "color: #ffffff;"><h2> Social Media </h2></span>
+        <div>
+            <ul class="footer-icons">
+                <li class="social-footer">
+                    <a href="https://www.facebook.com/jackson.hamm.5/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-facebook-f"></i></span></a>
+                </li>
+                <li class="social-footer">
+                    <a href="https://www.instagram.com/jacksonhamm/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-instagram"></i></span></a>
+                </li>
+                <li class="social-footer">
+                    <a href="https://www.linkedin.com/in/jackson-hamm-3a1319182/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-linkedin-in"></i></span></a>
+                </li>
+                <li class="social-footer">
+                    <a href="https://www.github.com/Jhamm17/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-github"></i></span></a>
+                </li>
+                <li class="social-footer">
+                    <a href="https://www.twitter.com/Jphamm2001/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-twitter"></i></span></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </footer>
 </html>

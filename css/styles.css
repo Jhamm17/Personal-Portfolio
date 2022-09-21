@@ -69,16 +69,21 @@ html {
 /* index page */
 
 body {
-  background: #60850a;
-  background: -webkit-linear-gradient(-8deg, #0b7f93, #03bb85);
-  background: linear-gradient(-8deg, #0b7f93, #03bb85);
+  background: #1b1c1f;
+  z-index: 3;
 }
 
+/* 
+body footer {
+  background: #317fff
+}
+*/
 video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 0;
 }
 
 .landing {
@@ -91,6 +96,9 @@ video {
   flex-direction: column;
   overflow: hidden;
   z-index: 1;
+  background: none;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .landing h1{
@@ -129,42 +137,38 @@ video {
   text-align: center;
 }
 
-.intro {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 10%;
-  padding-bottom: 50px;
-}
 
-.home-1 {
-  width: 30%;
-  height: auto;
-}
-
-.home-2 {
-  width: 30%;
-  height: auto;
-}
-
-.home-3 {
-  width: 30%;
-  height: auto;
-}
 
 
 /* Photography Page */
 
 .photo-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
-  padding: 50px;
+  padding-top: 100px;
+  margin-left: 475px;
+  width: 50%;
 }
 
+.photo-choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 95px;
+}
 /* Navigation */
 /* Built with the help of Sacsam005 and his codepen "Responsive Hamburger menu - CSS" */
+
+header {
+  background: #333;
+  z-index: 1;
+}
 
 .logo {
   color: #fff;
@@ -189,12 +193,18 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #60850a;
-  background: -webkit-linear-gradient(-8deg, #0b7f93, #03bb85);
-  background: linear-gradient(-8deg, #0b7f93, #03bb85);
+  background: none;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   z-index: 2;
   position: fixed;
 }
+
+/* Background gradient for navigation 
+
+  background: -webkit-linear-gradient(-8deg, #160435, #0b021b);
+  background: linear-gradient(-8deg, #160435, #0b021b);
+*/
 
 ul {
   margin-bottom: 0;
@@ -330,6 +340,24 @@ a.nav-link:hover {
   }
 }
 
+.button1 {
+  z-index: 3;
+  background: none;
+  color: #fff;
+  padding: 6px 8px 8px 8px;
+  opacity: 0.6;
+  transition: 0.3s;
+  font-size: 20px;
+  border-radius: 14px;
+  border: solid 2px white;
+  text-decoration: none;
+}
+
+.button1:hover {
+  opacity: 1;
+  color: #fff;
+}
+
 /* Responsive */
 .toggle:hover {
   color: fuchsia;
@@ -363,6 +391,7 @@ a.nav-link:hover {
 .resume {
   display: flex;
   justify-content: center;
+  padding-top: 150px;
 }
 
 .intro {
@@ -372,14 +401,15 @@ a.nav-link:hover {
 
 /* FOOTER */
 
-
 .footer-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  background: rgb(37, 37, 36);
+  padding: 20px;
+  z-index: 4;
 } 
+
 
 .footer-photo {
   display: flex;
@@ -389,12 +419,13 @@ a.nav-link:hover {
   margin-bottom: 60px;
 } 
 
+
 .footer-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
+  margin-left: -32px;
 }
 
 .social-footer {
@@ -402,10 +433,8 @@ a.nav-link:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-left: 20px
+  padding: 12px;
 }
-
 
 
 h5 {
@@ -414,29 +443,90 @@ h5 {
 
 /* About Page */
 
+.about-body {
+  background: #b296e2;
+  background: -webkit-linear-gradient(-8deg, #160f55, rgb(61, 159, 197));
+  background: linear-gradient(-8deg, #160f55, rgb(61, 159, 197));
+}
+
+.intro {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+}
+
+.home-1 {
+  margin-top: 90px;
+  width: 33.3%;
+  height: auto;
+}
+
+.home-2 {
+  margin-top: 90px;
+  width: 33.3%;
+  height: auto;
+}
+
+.home-3 {
+  margin-top: 90px;
+  width: 33.3%;
+  height: auto;
+}
+
+.home-4 {
+  margin-top: -875px;
+  margin-left: 650px;
+  width: 30%;
+  height: auto;
+  z-index: 2;
+}
+
+.home-4-border {
+  margin-top: -900px;
+  margin-left: 600px;
+  width: 35%;
+  background: #ffffff;
+  height: 850px;
+  z-index: 1;
+}
+
+
+.banner {
+  margin-top: -210px;
+}
 
 .about-article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 40px;
+  margin-top: 300px;
   color: #ffffff;
-  width: 100%;
-  background-color: rgba(16, 15, 75, 0.705);
+  background: none;
+  width: 30%;
   text-align: center;
-  margin-top: -300px;
 }
 
 .about-nav {
   padding-top: 10px;
 }
 
-.about-article h1 {
-  margin-bottom: 360px;
-  font-size: 70px;
+.about-title h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  width: 100%;
+  font-size: 80px;
   font-weight: bold;
-  padding-bottom: 100px;
-  margin-top: -510px;
+  padding-bottom: 400px;
+  margin-top: -800px;
+  text-align: center;
 }
 
 
@@ -448,7 +538,7 @@ h5 {
   padding: 15%;
   color: #ffffff;
   background-color: rgba(27, 26, 26, 0.705);
-  width: 80%;
+  width: 70%;
   height: 100%;
 }
 
@@ -457,11 +547,14 @@ h5 {
   flex-direction: column;
 }
 
+
+
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
+/*
 @media (min-width: 576px) {
   .about-article {
     display: flex;
@@ -469,19 +562,21 @@ No media query for `xs` since this is the default */
     align-items: center;
     flex-direction: column;
     color: #ffffff;
-    width: 100%;
-    background-color: rgba(51, 47, 47, 0.705);
+    background: none;
+    width: 50%;
+    padding: 20px;
     text-align: center;
   } 
 
 }
-
+*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
 }
 
 /* Large devices (desktops, 992px and up) */
+/*
 @media (min-width: 992px) {
   .about-article {
     display: flex;
@@ -490,14 +585,13 @@ No media query for `xs` since this is the default */
     flex-direction: column;
     padding: 15%;
     color: #ffffff;
-    width: 70%;
-    margin-left: 15%;
-    background-color: rgba(51, 47, 47, 0.705);
+    background: none;
+    width: 50%;
     text-align: center;
   }
 
 }
-
+*/
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
