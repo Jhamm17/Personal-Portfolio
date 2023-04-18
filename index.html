@@ -1,102 +1,682 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Jackson Hamm</title>
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- resets browser defaults -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-     <!-- link to Font Awesome icon font -->
-     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
-    <!-- custom styles -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="logo">Jackson Hamm</div>
-          
-            <div class="navbar">
-              <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="photography.html" class="nav-link">Photos</a></li>
-                <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-              </ul>
-            </div>
-          
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-    </header>
+<body id="top">
 
-    <div class="video">
-        <video autoplay loop muted>
-            <source src="video/landing.mp4" type="video/mp4">
-        </video>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello There</h3>
+
+                <h1>
+                    I&apos;m Jackson Hamm. <br>
+                    Full stack developer and<br>
+                    digital content creator.
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Latest Projects
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/jackson.hamm.5/" target="_blank"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/Jphamm2001/" target="_blank"><i class="im im-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/jacksonhamm/" target="_blank"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.github.com/Jhamm17/" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jackson-hamm-3a1319182/" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>About</h3>
+                <h1>More About Me</h1>
+                <p class="lead">I was born and raised in Fort Wayne, Indiana. After graduating from Homestead High School, I attended Indiana University in Bloomington. I am studying Informatics at the Luddy School of Informatics, Computing, and Engineering. I am also pursuing minors in 'Small Business Management and Entrepreneurship', and 'Marketing' from the Kelley School of Business.</p>
+            </div>
+        </div>
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full left">
+                <h3>Hobbies</h3>
+
+                <p>I believe that work-life balance is very important. I've always had a drive to work hard and apply myself to my work, but it's important to do things outside of just work. Doing the things you love relieves stress and shows off your personality. What do I love doing?</p>
+
+                <ul>
+                    <li>
+                        <p> Being outside (especially at the lake in the summer) </p>
+                    </li>
+                    <li>
+                        <p> Spending time with friends and family </p>
+                    </li>
+                    <li>
+                        <p> Watching and playing basketball, baseball, football, golf </p>
+                    </li>
+                    <li>
+                        <p> Going to the gym and staying healthy </p>
+                    </li>
+                    <li>
+                        <p> Fashion and new outfits </p>
+                    </li>
+                    <li>
+                        <p> Music! I can listen to about anything. </p>
+                    </li>
+                    <li>
+                        <p> Learning. I'm always trying to add to my skillset. </p>
+                    </li>
+                    <li>
+                        <p> DIY Projects </p>
+                    </li>
+                    <li>
+                        <p> Digital Content Creation. I love taking pictures and video with my camera </p>
+                    </li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-six tab-full right">
+                <h3>I've Got Some skills.</h3>
+
+                <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>HTML5</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>CSS3</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>SQL/MySQL</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>PHP</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>Python</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>JavaScript</strong>
+                    </li> 
+                    <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>Microsoft Excel</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>Premiere Pro</strong>
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- end about-content -->
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full left">
+                <a href="Resume.pdf" download class="btn btn--primary full-width">Download My Resume</a>
+            </div>
+            <div class="col-six tab-full right">
+                <a href="#contact" class="btn full-width smoothscroll">Hire Me Now</a>
+            </div>
+
+        </div> <!-- end about-content buttons -->
+
+        <div class="row about-content about-content--timeline">
+
+            <div class="col-full text-center">
+                <h3>My Work Experience.</h3>
+            </div>
+
+            <div class="col-six tab-full left">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">Jan 2022 - Present</p>
+                            <h3>Chick-fil-A</h3>
+                            <h5>Delivery Driver</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <ul>
+                                <li>Navigate to and from up to 8 delivery sites per hour.</li>
+                                <li>Load 20+ customer orders into delivery vehicle daily.</li>
+                                <li>Communicate with customers to hand off deliveries and provide excellent customer service.</li>
+                                <li>Scrutinize delivery orders against ticket information to ensure accurate and timely delivery; reducing delivery errors by over 50% within 3 months.</li>
+                                <li>Deliver orders to customers in a timely and efficient manner, with an average delivery time of 28 minutes per order.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">May 2022 - August 2022</p>
+                            <h3>Mutton Power Equipment</h3>
+                            <h5>Independent Contractor</h5>
+                        </div>
+                        <div class="timeline__desc">	
+                            <ul>
+                                <li>Managed a team of 4 landscapers to achieve various tasks.</li>
+                                <li>Led 2 daily team meetings with landscapers for daily tasks and problems encountered on job site.</li>
+                                <li>Selected appropriate equipment for jobs and delegated work to team members.</li>
+                                <li>Frequently lifted objects over 50 pounds in weight</li>
+                                <li>Drove company truck and 18 foot trailer to and from job sites safely with 0 accidents.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">November 2021 - January 2022</p>
+                            <h3>UPS</h3>
+                            <h5>Package Pre-loader</h5>
+                        </div>
+                        <div class="timeline__desc">	
+                            <ul>
+                                <li>Maintained a safe and organized work environment, following all UPS safety guidelines and protocols.</li>
+                                <li>Utilized UPS scanning technology to track and manage package flow and inventory.</li>
+                                <li>Collaborated with team members to efficiently process high volumes of packages within tight deadlines.</li>
+                                <li>Communicated effectively with team members and supervisors to address any concerns or issues related to package processing or delivery.</li>
+                                <li>Demonstrated reliability and punctuality by consistently showing up on time and meeting performance expectations.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+            <div class="col-six tab-full right">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">April 2020 - June 2021</p>
+                            <h3>Kroger</h3>
+                            <h5>Click-list Associate</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <ul>
+                                <li>Communicated with several customers daily to direct them to items in the store.</li>
+                                <li>Handled payments for 50+ daily pick up orders.</li>
+                                <li>Selected and scanned up to 1200 items daily in the store for customer orders.</li>
+                                <li>Answered phone calls from customers to address issues or concerns they had.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">July 2018 - August 2019</p>
+                            <h3>Medical Informatics Engineering</h3>
+                            <h5>Software Engineering/Project Manager Intern - Enterprise Health Team</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <ul>
+                                <li>Configured Modules in the EHR System (WebChart/Enterprise Health).</li>
+                                <li>Researched and selected a Learning Management System for use by hundreds of employees (Moodle).</li>
+                                <li>Created a Health and Wellness Program for the company&apos;s 100+ employees.</li>
+                                <li>Wrote code using HTML, CSS, JavaScript, Python, and C.</li>
+                                <li>Managed projects using Smartsheet</li>
+                            </ul>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">October 2017 - June 2018</p>
+                            <h3>Pizza Hut</h3>
+                            <h5>Team Member</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <ul>
+                                <li>Answered telephones and entered orders accurately into the computer system.</li>
+                                <li>Demonstrated excellent customer service by answering customer inqueries, resolving issues or complaints, and escalating to management as needed</li>
+                                <li>Followed all opening and closing procedures, ensuring the restaurant was ready for customers at the start of each shift and properly secured at the end of each shift.</li>
+                                <li>Adhered to company policies and procedures, including dress code, food safety, and employee conduct.</li>
+                            </ul>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end right -->
+
+        </div> <!-- end about-content timeline -->
+
+    </section> <!-- end about -->
+    
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>Featured Project</h1>
+                
+                <p class="lead">Sports Social is a project you don't want to miss. This project has took months of collaborative planning and development. Watch the video below to learn more!</p>
+
+                <div class="iframe-container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/LPkGsXSkfc4" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+                <br>
+                <br>
+                <p class="lead">Check out some of my other work examples below</p>
+            </div>
+        </div>
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-ss.jpg" class="thumb-link" title="Sports Social" data-size="1050x700">
+                                <img src="images/portfolio/ss.jpg" 
+                                     srcset="images/portfolio/ss.jpg 1x, images/portfolio/ss@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Sports Social
+                            </h3>
+                            <p class="item-folio__cat">
+                                Capstone
+                            </p>
+                        </div>
+
+
+                        <div class="item-folio__caption">
+                            <p>To see the entire project plan, please download the PDF <a href="Capstone Project Plan.pdf" download >here.</a> Through my senior year, I have worked on a team of 4 to bring this plan to life. The Fall semester of my Senior year was spent creating this 107 page plan. During the Spring semester, I have worked with my team using GitHub to bring this plan to life. The website can be seen in the demo video featured above. Users must have an IU login to register and use the site. I was responsible for polls (php, sql/Mysql, html, and css) as well as IU live which is a part of communities (html, css, php, sql/MySQL, automatically updated using a python script that scrapes various sites for information and inserts the data into the database).</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-nzxt.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/nzxt.jpg" 
+                                     srcset="images/portfolio/nzxt.jpg 1x, images/portfolio/nzxt@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Custom Computer
+                            </h3>
+                            <p class="item-folio__cat">
+                                Personal Project
+                            </p>
+                        </div>
+
+                        <span class="item-folio__caption">
+                            <p>This project took many hours of research beforehand. I researched and ordered parts, then used those parts to build my own personal computer. This was the first time I had worked with computer hardware. The project gave me a deeper understanding of how computer hardware works and has helped me in numerous projects since.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-userstudy.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/userstudy.jpg"
+                                     srcset="images/portfolio/userstudy.jpg 1x, images/portfolio/userstudy@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                User Study
+                            </h3>
+                            <p class="item-folio__cat">
+                                Report
+                            </p>
+                        </div>
+
+
+                        <span class="item-folio__caption">
+                            <p>This project helped me understnad how user studies are conducted and how they are useful in projects. This also taught me how to document user studies correctly. Using wireframes was also very helpful in mocking up an idea to test quickly. Download the pdf of the full report <a href="I300.pdf" download >here</a></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-hdm.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/hdm.jpg"
+                                     srcset="images/portfolio/hdm.jpg 1x, images/portfolio/hdm@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Hamm Digital Marketing
+                            </h3>
+                            <p class="item-folio__cat">
+                                Business
+                            </p>
+                        </div>
+
+
+                        <span class="item-folio__caption">
+                            <p>This is a site for customers to reach me for business services. Services include Social Media Marketing, Search Engine Optomization, AirBnB Marketing, Advertising, Web Development, and Videography. Learn more at <a href="https://www.hammdigitalmarketing.com" target="blank">hammdigitalmarketing.com</a> (site is not finished) </p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+            </div>
+        </div> <!-- end masonry -->
+
+    </section> <!-- end works -->
+
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Contact</h3>
+                <h1>Say Hello.</h1>
+                
+                <p class="lead">Want to talk more? Contact me through any of the methods below, or fill out the form below and I'll get back to you as soon as possible. Thanks for checking out my website!</p>
+            </div>
+        </div>
+
+        <div class="row contact__main">
+            <div class="col-eight tab-full contact__form">
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+                        
+            </div>
+            <div class="col-four tab-full contact__infos">
+                <h4 class="h06">Phone</h4>
+                <p>Phone: (+1) 260 210 4644<br>
+                </p>
+
+                <h4 class="h06">Email</h4>
+                <p>jphamm2001@yahoo.com<br>
+                jacksonhamm@hammdigitalmarketing.com
+                </p>
+
+                <h4 class="h06">Address</h4>
+                <p>
+                515 East 14th St, Apt. B<br>
+                Bloomington, IN<br>
+                47408 US
+                </p>
+            </div>
+
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="images/logo.png" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.facebook.com/jackson.hamm.5/" target="_blank"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/Jphamm2001/" target="_blank"><i class="im im-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jacksonhamm/" target="_blank"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/Jhamm17/" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jackson-hamm-3a1319182/" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+                    </li>
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Jackson Hamm</span> 
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
 
-    <section class="landing"> 
-            <h1> Hi, I'm Jackson.</h1>
-            <h5> Full Stack Developer & Digital Content Creator </h5>
-            <p> Welcome to my Website! I am a developer and student at Indiana University. I love sports, nature, and everything digital. </p>
-            <p> (Note - This website is a work in progress. I will continue to update the site when I have time to work on it.  Mobile functionality is coming soon. Enjoy!) </p>
-            <a href = "about.html" class="button button1">  Click here to learn more about me! </a>
-    </section>
 
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-    <!-- Script for Navigation - hides and reveals menu items on click -->
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        });
-
-        document.querySelectorAll(".nav-link").forEach((link) =>
-            link.addEventListener("click", () => {
-                hamburger.classList.remove("active");
-                navMenu.classList.remove("active");
-            })
-        );
-    </script>
 </body>
 
-<!--
-<footer>
-    <div class="footer-container">
-        <span style = "color: #ffffff;"><h2> Social Media </h2></span>
-        <div>
-            <ul class="footer-icons">
-                <li class="social-footer">
-                    <a href="https://www.facebook.com/jackson.hamm.5/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-facebook-f"></i></span></a>
-                </li>
-                <li class="social-footer">
-                    <a href="https://www.instagram.com/jacksonhamm/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-instagram"></i></span></a>
-                </li>
-                <li class="social-footer">
-                    <a href="https://www.linkedin.com/in/jackson-hamm-3a1319182/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-linkedin-in"></i></span></a>
-                </li>
-                <li class="social-footer">
-                    <a href="https://www.github.com/Jhamm17/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-github"></i></span></a>
-                </li>
-                <li class="social-footer">
-                    <a href="https://www.twitter.com/Jphamm2001/" target="_blank"><span style = "color: #ffffff;"><i class="fa-brands fa-twitter"></i></span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
--->
 </html>
